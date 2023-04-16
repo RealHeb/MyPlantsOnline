@@ -11,9 +11,25 @@ SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 
+@app.route('/Главная.html')
 @app.route('/')
-def image():
-    return render_template('Авторизация.html', title='Регистрация')
+def one():
+    return render_template('Главная.html')
+
+
+@app.route('/Регистрация.html')
+def two():
+    return render_template('Регистрация.html')
+
+
+@app.route('/Авторизация.html')
+def three():
+    return render_template('Авторизация.html')
+
+
+@app.route('/Профиль.html')
+def four():
+    return render_template('Профиль.html')
 
 
 '''
