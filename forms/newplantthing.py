@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import PasswordField, BooleanField, StringField, Field, TextAreaField, SubmitField, EmailField, FileField
+from wtforms import BooleanField, StringField, SubmitField, FileField
 from wtforms.validators import DataRequired
 
 
@@ -15,4 +15,3 @@ class PlantForm(FlaskForm):
     saturday = BooleanField('Суббота')
     sunday = BooleanField('Воскресенье')
     submit = SubmitField('Сохранить')
-
